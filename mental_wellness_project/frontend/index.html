@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AIP-MWA | Precision Mental Wellness Analyzer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AI-Powered Precision Mental Wellness Analyzer</h1>
+      <p class="tagline">
+        Multimodal monitoring across text, voice, face, and screen with real-time coaching
+      </p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>1. Text Check-in</h2>
+        <textarea
+          id="text-input"
+          placeholder="How are you feeling right now? Share anything that is on your mind."
+        ></textarea>
+        <button id="text-btn">Analyze Mood</button>
+        <div id="text-result" class="result"></div>
+      </section>
+
+      <section class="card">
+        <h2>2. Wellness Companion</h2>
+        <div id="chat-window"></div>
+        <div class="chat-input">
+          <input id="chat-message" placeholder="Type a message for your AI coach..." />
+          <button id="chat-voice" title="Voice Input">🎤</button>
+          <button id="chat-send">Send</button>
+        </div>
+        <div id="voice-status" class="voice-status" style="display: none; margin-top: 8px; font-size: 0.9em; color: #666;">
+          <span id="voice-indicator">🔴</span> <span id="voice-text">Listening...</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>3. Live Multimodal Monitor</h2>
+        <div class="monitor-controls">
+          <button id="start-monitor">Start Monitoring</button>
+          <button id="stop-monitor" disabled>Stop Monitoring</button>
+        </div>
+        <p class="small">
+          Requires browser permissions for microphone, camera, and screen capture. No data is stored
+          in the cloud—analysis runs locally + backend.
+        </p>
+
+        <div class="streams">
+          <video id="camera-stream" autoplay muted playsinline></video>
+          <video id="screen-stream" autoplay muted playsinline></video>
+        </div>
+
+        <div id="monitor-result" class="result"></div>
+      </section>
+    </main>
+
+    <aside class="card">
+      <h2>Emergency Alerts</h2>
+      <div id="alert-feed">No alerts yet.</div>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>

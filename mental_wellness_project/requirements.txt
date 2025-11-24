@@ -1,0 +1,17 @@
+Flask
+Flask-Cors
+transformers
+torch
+numpy
+scikit-learn
+librosa
+soundfile
+pytesseract
+Pillow
+opencv-python
+fer
+mtcnn
+python-dotenv
+openai
+pydub
+easyocr
