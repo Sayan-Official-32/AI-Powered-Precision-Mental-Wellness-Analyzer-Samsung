@@ -29,7 +29,6 @@ mental_wellness_project/
 1. **Install system prerequisites**
    - Python 3.9+
    - git clone <https://github.com/Sayan-Official-32/AI-Powered-Precision-Mental-Wellness-Analyzer-Samsung.git>
-   - cd mental_wellness_project
 
 2. **Create a virtual environment**
    ```bash
