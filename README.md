@@ -28,7 +28,9 @@ mental_wellness_project/
 ### Getting Started
 1. **Install system prerequisites**
    - Python 3.9+
-   - Tesseract OCR (required for `pytesseract`)
+   - git clone <https://github.com/Sayan-Official-32/AI-Powered-Precision-Mental-Wellness-Analyzer-Samsung.git>
+   - cd mental_wellness_project
+
 2. **Create a virtual environment**
    ```bash
    python -m venv .venv
